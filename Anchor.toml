@@ -6,10 +6,12 @@ skip-lint = false
 
 [programs.localnet]
 sevens_token = "Ah4sw8i5k74TC7tCzSrqkEitNdQVRhgrPsKfUrhqzEbn"
+sevens_token_management = "DLNR4oQQajCa6UyATqUzpqJgguUCkg3hShZPTMsVKq3h"
 
 [workspace]
 members = [
     "contracts/sevens-token",
+    "contracts/sevens-token-management",
 ]
 
 [registry]

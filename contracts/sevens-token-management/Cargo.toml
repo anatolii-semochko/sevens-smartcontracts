@@ -1,0 +1,22 @@
+[package]
+name = "sevens-token-management"
+version = "0.1.0"
+description = "Sevens Token Management Smart Contract"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "sevens_token_management"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+solana-program = "=1.16.20"
+anchor-lang = { version = "0.26.0", features = ["init-if-needed"] }
+anchor-spl = "0.26.0"
+ahash = "=0.8.6"
